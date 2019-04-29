@@ -8,6 +8,7 @@ module.exports = {
    */
   head: {
     title: pkg.name,
+    titleTemplate: '%s | Awesome JS SSR Blog',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -24,7 +25,10 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    // SCSS file in the project
+    '@/assets/css/index.scss'
+  ],
 
   /*
    ** Plugins to load before mounting the App
@@ -69,7 +73,7 @@ module.exports = {
   generate: {
     routes(callback) {
       const posts = require('./assets/posts.json')
-      let routes = posts.map(post => `/post/${post.id}`)
+      const routes = posts.map(post => `/post/${post.id}`)
       callback(null, routes)
     }
   }
