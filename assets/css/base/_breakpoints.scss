@@ -1,15 +1,5 @@
-$break-s: 768px !default;
-$break-m: 992px !default;
-$break-l: 1200px !default;
-$break-x: 1920px !default;
-
-// $breakpoint: (
-//   'xs' : (max-width: $--sm),
-//   'sm' : (min-width: $--sm),
-//   'md' : (min-width: $--md),
-//   'lg' : (min-width: $--lg),
-//   'xl' : (min-width: $--xl)
-// );
-
-
-
+$break-t: 320px !default;  // Tiny
+$break-s: 768px !default;  // Small
+$break-m: 992px !default;  // Medium
+$break-l: 1200px !default; // Large
+$break-x: 1920px !default; // XLarge
