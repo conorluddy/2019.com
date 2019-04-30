@@ -70,6 +70,10 @@ module.exports = {
     }
   },
 
+
+  /**
+   * Generate routes for dynamic pages like posts
+   */
   generate: {
     routes(callback) {
       const posts = require('./assets/posts.json')

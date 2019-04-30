@@ -28,7 +28,7 @@
 import posts from '../assets/posts.json'
 
 export default {
-  name: 'posts',
+  name: 'BlogPostList',
   data() {
     return { posts }
   }
